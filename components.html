@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Lively Design System</title>
+
+		<link href="main.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+
+		<header id="top-page" class="header-nav">
+
+			<a class="logo" href="index.html">Lively Design System</a>
+
+			<nav class="site-nav">
+				<ul>
+					<li><a href="introduction.html">Introduction</a></li>
+					<li><a href="style.html">Style</a></li>
+					<li><a class="currentlink" href="components.html">Components</a></li>
+					<li><a href="layout.html">Layout</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="main-with-nav">
+
+				<div class="vertical-nav">
+
+					<h1><a href="#top-page">Components</a></h1>
+
+					<nav class="vertical-nav-bar">
+						<ul>
+							<li><a href="#buttons">Buttons</a></li>
+							<li><a href="#notifications">Notifications</a></li>
+							<li><a href="#accordions">Accordions</a></li>
+							<li><a href="#information-cards">Information Cards</a>
+								<ol>
+									<li><a href="#action-card">Action Card</a></li>
+									<li><a href="#article-card">Article Card</a></li>
+								</ol>
+							</li>
+							<li><a href="#modal-dialog">Modal Dialog</a></li>
+							<li><a href="#form-inputs">Forms/Inputs</a>
+								<ol>
+									<li><a href="#contact-form">Contact Form</a></li>
+									<li><a href="#disabled-input">Disabled Input</a></li>
+									<li><a href="#error-input">Error Input</a></li>
+								</ol>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<div class="main-content components">
+
+					<section>
+
+						<h1 id="buttons">Buttons</h1>
+
+						<figure>
+
+							<button class="button-primary">Primary button</button>
+
+						</figure>
+
+						<figure>
+
+							<button class="button-secondary">Secondary button</button>
+
+						</figure>
+
+					</section>
+
+					<section>
+
+						<h1 id="notifications">Notifications</h1>
+
+						<figure>
+
+							<div class="notification-error">
+
+								<div class="notification-icon">
+
+									<img src="images/exclamation.svg" alt="Error">
+
+								</div>
+
+								<div class="notification-text">
+
+									<p>This is an <strong>error</strong> notification. This is used to tell the user something is wrong.</p>
+
+								</div>
+
+							</div>
+
+							<div class="notification-warning">
+
+								<div class="notification-icon">
+	
+									<img src="images/exclamation.svg" alt="Warning">
+
+								</div>
+
+								<div class="notification-text">
+
+									<p>This is a <strong>warning</strong> notification. This is used to tell the user something is in danger of happening.</p>
+
+								</div>
+
+							</div>
+
+							<div class="notification-neutral">
+
+								<div class="notification-icon">
+
+									<img src="images/exclamation.svg" alt="Notification">
+
+								</div>
+
+								<div class="notification-text">
+
+								<p>This is a <strong>neutral</strong> notification. This is simply informative.</p>
+
+								</div>
+
+							</div>
+
+							<div class="notification-success">
+
+								<div class="notification-icon">
+
+									<img src="images/exclamation.svg" alt="success">
+
+								</div>
+	
+								<div class="notification-text">
+
+									<p>This is a <strong>success</strong> notification. This lets the user know something positive happened.</p>
+
+								</div>
+
+							</div>
+
+						</figure>
+
+					</section>
+
+					<section>
+
+						<h1 id="accordions">Accordions</h1>
+
+						<figure>
+
+							<details>
+
+								<summary>Accordion 1</summary>
+
+								<div>
+
+									<h3>This is an accordion.</h3>
+
+									<p>It can be used for FAQs and other instances where users need to parse a lot of information quickly and easily.</p>
+
+								</div>
+
+							</details>
+
+							<details>
+
+								<summary>Accordion 2</summary>
+
+								<div>
+
+									<h3>This is an accordion.</h3>
+
+									<p>It can be used for FAQs and other instances where users need to parse a lot of information quickly and easily.</p>
+
+								</div>
+
+							</details>
+
+							<details>
+
+								<summary>Accordion 3</summary>
+
+								<div>
+
+									<h3>This is an accordion.</h3>
+
+									<p>It can be used for FAQs and other instances where users need to parse a lot of information quickly and easily.</p>
+
+								</div>
+
+							</details>
+
+						</figure>
+
+					</section>
+
+					<section>
+
+						<h1 id="information-cards">Information Cards</h1>
+
+						<h2 id="action-card">Action card (small)</h2>
+
+						<figure>
+
+							<div class="card-action small pink">
+								
+								<h1>Heading</h1>
+								<p>This text can be use for quick explanations and information.</p>
+								<a>Read more</a><br>
+								<a>&#x2192;</a>
+							
+							</div>
+
+						</figure>
+
+						<br>
+
+						<h2>Action card (medium)</h2>
+
+						<figure>
+						
+							<div class="card-action medium blue">
+								
+								<h1>Heading</h1>
+								<p>This text can be use for quick explanations and information.</p>
+								<a>Read more</a><br>
+								<a>&#x2192;</a>
+							
+							</div>
+
+						</figure>
+
+						 <br>
+
+						<h2 id="article-card">Article card (small)</h2>
+
+						<figure>
+
+							<div class="card-article article-small">
+
+								<div class="card-article-category yellow">
+									<h3>Event</h3>
+								</div>
+								<div class="card-article-info">
+									<p>Article heading or highlighted text</p>
+								</div>
+
+							</div>
+
+						</figure>
+
+						<h2>Article card (medium)</h2>
+
+						<figure>
+
+							<div class="card-article article-medium">
+
+								<div class="card-article-category yellow">
+									<h3>Event</h3>
+								</div>
+								<div class="card-article-info">
+									<p>Article heading or highlighted text</p>
+								</div>
+
+							</div>
+
+						</figure>
+
+						<h2>Article card (large)</h2>
+
+						<figure>
+
+							<div class="card-article-large">
+
+								<div class="card-action small pink">
+									
+									<h1>Heading</h1>
+									<p>Article heading or highlighted text</p>
+									<a>Read more</a><br>
+									<a>&#x2192;</a>
+							
+								</div>
+
+								<div class="card-article-large-img">
+									
+								</div>
+
+							</div>
+
+						</figure>
+
+					</section>
+
+					<section>
+
+						<h1 id="modal-dialog">Modal Dialog</h1>
+
+						<figure>
+
+							<button class="button-primary" id="open-modal" type="button">Open Modal</button>
+
+							<dialog id="modal-demo">
+
+								<h3>Modal dialog</h3>
+
+								<div class="modal-text">
+
+									<p> This type of component can be used for popup information, sign-in forms, confirmation indicators, etcetera.</p>
+									
+									<button class="button-secondary" id="close-modal">Close</button>
+									
+								</div>
+				
+							</dialog>
+
+						</figure>
+
+					</section>
+
+					<section>
+
+						<h1 id="form-inputs">Forms/Inputs</h1>
+
+						<h2 id="contact-form">Contact Form</h2>
+
+						<figure>
+
+							<form action="contact.js">
+
+								<div class="contact-form">
+
+									<h1>Contact Us</h1>
+
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" placeholder="John Lennon" required>
+
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" placeholder="name@place.com">
+
+									<label for="phone">Phone Number</label>
+									<input type="phone" id="phone" name="phone" placeholder="123-456-7890">
+
+									<label for="message">Message</label>
+									<textarea id="message" name="message"></textarea>
+
+									<input type="submit" value="Send message">
+
+								</div>
+
+							</form>
+
+						</figure>
+
+						<h2 id="disabled-input">Disabled Input</h2>
+
+						<figure class="disabled-input">
+
+							<label for="email">Email (disabled)</label>
+							<input type="email" id="email" name="email" disabled placeholder="name@place.com">
+
+						</figure>
+
+						<h2 id="error-input">Error Input</h2>
+
+						<figure class="error-input">
+
+							<label for="phone">Phone Number (error)</label>
+							<input type="phone" id="phone" name="phone" placeholder="123-456-7890" class="error" required class="error">
+							<p class="error-message">*Your phone number requires 10 digits.</p>
+
+						</figure>
+
+					</section>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function(){
+
+				const modal = document.querySelector('dialog');
+				const open = document.getElementById('open-modal');
+				const close = document.getElementById('close-modal');
+
+				open.addEventListener('click', () => {
+					modal.showModal();
+				});
+
+				modal.addEventListener('click', event => {
+				if (event.target === modal) {
+				modal.close('cancelled');
+				}
+				});
+
+				close.addEventListener('click', () => {
+					modal.close('cancelled');
+				});
+
+				});
+			</script>
+
+			<p>Lively Design System created by Rachel Longoria.</p>
+
+			<p>Happening is not an actual company; it is a hypothetical company created by a professor for this design system project. For more information, contact Rachel Longoria.</p>
+
+			<nav>
+				<ul>
+					<li><a href="https://rachellongoria.github.io/portfolio">Portfolio</a></li>
+					<li><a href="https://www.linkedin.com/in/rachel-longoria/">LinkedIn</a></li>
+				</ul>
+			</nav>
+
+			<p>Copyright &copy; 2019 Rachel Longoria. All rights reserved.</p>
+
+		</footer>
+
+	</body>
+
+</html>
