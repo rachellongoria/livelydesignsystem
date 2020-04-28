@@ -1101,19 +1101,16 @@ form label {
 }
 
 .hero-block {
+	align-items: center;
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/image-5.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
 	height: 100vh;
+	justify-content: center;
 	overflow: hidden;
 	width: 100%;
-}
-
-.hero-info {
-	display: flex;
-	justify-content: center;
-	margin: var(--margin-three-up) 3rem;
 }
 
 @media ( min-width: 900px ) {
