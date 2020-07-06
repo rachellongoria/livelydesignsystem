@@ -154,6 +154,14 @@ a:active {
 	color: var(--color-pink-primary);
 }
 
+.logo-text {
+	font-family: var(--font-logo);
+}
+
+.header-text {
+	font-family: var(--font-heading);
+}
+
 h1, h2, h3, h4, h5 {
 	letter-spacing: .1em;
 	margin-bottom: var(--margin-one-up);
